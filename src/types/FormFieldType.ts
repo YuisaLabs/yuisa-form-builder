@@ -2,9 +2,7 @@ export type FormFieldType =
   | "text"
   | "textarea"
   | "email"
-  | "select"
   | "checkbox"
-  | "radio"
   | "file"
 
 export interface FormField {
