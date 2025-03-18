@@ -1,6 +1,6 @@
 import { CiText } from "react-icons/ci";
 import { FormFieldType } from "../types/FormFieldType";
-import { LuAlignLeft, LuFile, LuMail, LuSquareCheck } from "react-icons/lu";
+import { LuAlignLeft, LuCircle, LuFile, LuListOrdered, LuMail, LuSquareCheck } from "react-icons/lu";
 
 interface FieldButtonProps {
   type: FormFieldType;
@@ -44,6 +44,18 @@ export default function FieldPallete({ onAddField }: FieldPalleteProps) {
         type="checkbox"
         label="Checkbox"
         icon={<LuSquareCheck />}
+        onAddField={onAddField}
+      />
+      <FieldButton
+        type="radio"
+        label="Radio Group"
+        icon={<LuCircle />}
+        onAddField={onAddField}
+      />
+      <FieldButton
+        type="select"
+        label="Dropdown"
+        icon={<LuListOrdered />}
         onAddField={onAddField}
       />
       <FieldButton
